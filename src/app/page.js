@@ -5,7 +5,10 @@ import {
   writeFile,
 } from '../helpers/file-helpers';
 
+// tell Next the rendering strategy to be 'dynamic'
 const DATABASE_PATH = '/src/database.json';
+
+export const dynamic = 'force-dynamic';
 
 function Home() {
   let { hits } = JSON.parse(
